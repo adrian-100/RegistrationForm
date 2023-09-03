@@ -1,0 +1,91 @@
+body{
+    /* add a background that uses a linear-gradient */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+#form{
+    background-color: whitesmoke;
+    /* sets form's margin */
+    width: 300px;
+    /*positions the form at the center */
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    /* makes the edges of the border rounded*/
+    border-radius: 5px;
+    font-size: 12px;
+}
+#form h1{
+    color: #0f2027;
+    text-align: center;
+}
+#form h1:hover{
+    color: red;
+    transition: 0.3s;
+}
+#form button{
+    padding: 10px; /* adds spacing between the border and the margin */
+    margin-top: 10px;
+    /* sets button to occupy the form's width */
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: rgb(41, 57, 194);
+}
+#form button:hover{
+    background-color: #09c372;
+    transition: 0.5s;
+    color: black;
+}
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+.input-control input{
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0;
+    display: block;/* what does  adding this css do?*/
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border-color: #09c372;
+}
+.input-control.error input{
+    border-color: #ff3860;
+}
+/* what does this css do?*/
+.input-control .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+.success-message {
+    text-align: center;
+    background-color: #fff; /* Background color for the message box */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the container */
+    max-width: 400px;
+    width: 90%;
+    position: fixed; /* Fix the position for centering */
+    top: 50%; /* Move the top edge to the vertical center of the screen */
+    left: 50%; /* Move the left edge to the horizontal center of the screen */
+    transform: translate(-50%, -50%); /* Center the element using a translate transform */
+}
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .success-message {
+        max-width: 90%;
+    }
+}
+

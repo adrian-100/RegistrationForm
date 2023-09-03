@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+        <div class="success-message" style="display: none;">
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering with us. You can now log in to your account.</p>
+        </div>
+ 
+
+    <div class="container">
+        <form action="" id="form">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="con-password">Confirm Password</label>
+                <input type="passowrd" name="confirm-password" id="confirm-password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+<script defer src="script.js"></script>
+</html>
